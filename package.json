@@ -1,0 +1,23 @@
+{
+  "name": "elm-reactor-custom-html",
+  "version": "1.0.0",
+  "private": true,
+  "description": "a small demo how to set up elm-reactor with custom html",
+  "scripts": {
+    "start": "ELM_HOME=node_modules/elm/share elm-reactor",
+    "make": "elm-make Main.elm",
+    "postinstall": "npm run make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basti1302/elm-reactor-custom-html.git"
+  },
+  "author": "Bastian Krol <bastian.krol@web.de>",
+  "license": "UNLICENSED",
+  "keywords": [
+    "elm"
+  ],
+  "dependencies": {
+    "elm": "^2.0.0"
+  }
+}

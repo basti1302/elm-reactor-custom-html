@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>elm-reactor and custom html</title>
+
+  <!--
+  This provides the debugger (that is, Elm.fullscreenDebug) and live reload
+  capabilities.
+  -->
+  <script type="text/javascript" src="/_reactor/debug.js"></script>
+
+  <!--
+  Despite not being mentioned in the docs, it seems we need to include elm.js
+  otherwise errors like "Cannot read property 'make' of undefined" pop up -looks
+  like the Elm runtime is missing.
+  -->
+  <script type="text/javascript" src="elm.js"></script>
+
+  <!--
+  Some static css.
+  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+/* Start the Elm app in debug mode */
+Elm.fullscreenDebug('Demo', 'Main.elm');
+</script>
+
+</html>
