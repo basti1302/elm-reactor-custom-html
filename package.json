@@ -4,9 +4,10 @@
   "private": true,
   "description": "a small demo how to set up elm-reactor with custom html",
   "scripts": {
-    "start": "ELM_HOME=node_modules/elm/share elm-reactor",
+    "postinstall": "npm run make",
     "make": "elm-make Main.elm",
-    "postinstall": "npm run make"
+    "dev": "ELM_HOME=node_modules/elm/share elm-reactor",
+    "start": "npm run make && http-server"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
     "elm"
   ],
   "dependencies": {
-    "elm": "^2.0.0"
+    "elm": "^2.0.0",
+    "http-server": "^0.8.5"
   }
 }
