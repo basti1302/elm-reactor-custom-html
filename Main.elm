@@ -2,7 +2,7 @@ module Demo (main) where
 
 import Html exposing (Html)
 import Html.Attributes
-import Signal exposing (Signal, (<~), (~))
+import Signal exposing (Signal)
 import Time exposing (every, second)
 
 view : Float -> Int -> Int
@@ -16,10 +16,10 @@ mainSignal =
 
 main : Signal Html
 main =
+  Signal.map
   (\ counter ->
      Html.div [ Html.Attributes.class "main" ] [
        Html.text <| toString counter
     ,  Html.text " -- change this text"
     ]
-  ) <~ mainSignal
-
+  ) mainSignal
