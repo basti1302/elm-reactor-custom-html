@@ -1,6 +1,11 @@
 How to Use elm-reactor With Custom HTML (While Installing Elm Via npm)
 ======================================================================
 
+## Warning
+
+Hot-Code-Reload seems to be broken in Elm 0.16.0. Thus, also live reload on <http://localhost:8000/index.debug.html> does not work as described below. Hope is this will be fixed in a later version of Elm.
+
+---
 
 Setup
 -----
