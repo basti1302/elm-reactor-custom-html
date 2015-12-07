@@ -5,7 +5,7 @@
   "description": "a small demo how to set up elm-reactor with custom html",
   "scripts": {
     "postinstall": "npm run make",
-    "make": "elm-make Main.elm",
+    "make": "elm-make Main.elm --output elm.js",
     "dev": "ELM_HOME=node_modules/elm/share elm-reactor",
     "start": "npm run make && http-server"
   },
@@ -19,7 +19,7 @@
     "elm"
   ],
   "dependencies": {
-    "elm": "^2.0.0",
+    "elm": "^0.16.0",
     "http-server": "^0.8.5"
   }
 }
